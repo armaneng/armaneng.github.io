@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("assets/fonts/BYekan.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "BYekan";
+    src: url("assets/fonts/BYekan-Bold.ttf");
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "BYekan", sans-serif;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F8BB00;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px 2px #ccc;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-button {
+    width: 2.5rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.toggle-button__bar {
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background: white;
+    margin: 0.5rem 0;
+}
+
+.toggle-theme {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #3b3939; 
+    /* background: #00c3ff; */
+    padding: 0 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.toggle-theme,
+.toggle-language {
+    border: 2px solid white;
+    transition: border-color 0.4s ease;
+}
+
+.toggle-theme:hover,
+.toggle-theme:active {
+    border-color: #c03e27;
+}
+
+.toggle-theme__option--light-mode {
+    color: #fcbf49;
+}
+
+.toggle-theme__option--dark-mode {
+    color: white;
+}
+
+.toggle-theme__circle {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: #2bff00;
+    border-radius: inherit;
+    border: 2px solid #3b3939;
+}
+
+.toggle-language {
+    border-radius: 10px;
+    padding: 0rem 0.5rem;
+    background: #3b3939;
+    color: white;
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.toggle-language__option {
+    text-decoration: none;
+    color: inherit;
+    vertical-align: middle;
+    transition: color 0.2s ease;
+}
+
+.toggle-language__option:hover,
+.toggle-language__option:active {
+    color: #F8BB00;
+}
+
+.toggle-language span {
+    vertical-align: middle;
+}
+
+
+
