@@ -16,12 +16,15 @@
 
 body {
     font-family: "BYekan", sans-serif;
+    font-weight: 300;
     margin: 0;
     background: #f5f5f5;
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
+    min-width: 20rem;
+    height: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +33,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0 2px 5px 2px #ccc;
+    box-shadow: 0 2px 5px 0 #2020208a;
 }
 
 .buttons-container {
@@ -124,6 +127,3 @@ body {
 .toggle-language span {
     vertical-align: middle;
 }
-
-
-
