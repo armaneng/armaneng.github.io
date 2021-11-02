@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 3.5rem;
-    width: 100vw;
+    width: 100%;
     min-width: 20rem;
     height: calc(100vh - 3.5rem);
     min-height: 29rem;
@@ -40,4 +40,41 @@
 
 .introduction__description {
     font-size: 1.2rem;
+}
+
+.about-me {
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+}
+
+.about-me__wrapper {
+    overflow: auto;
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    width: 75%;
+    /* min-width: 21.5rem; */
+    max-height: 100vh;
+    border-radius: 0.4rem;
+    box-shadow: 0 2px 5px 0 #2020208a;
+    background: white;
+}
+
+.about-me__line {
+    width: 6rem;
+    height: 0.2rem;
+    background: red;
+}
+
+.about-me__description {
+    font-weight: 500;
+    color: #3d3d3d;
+}
+
+.about-me__description span {
+    color: red;
+    font-weight: 500;
 }
