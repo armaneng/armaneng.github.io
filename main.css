@@ -164,3 +164,94 @@
     color: red;
     font-weight: 500;
 }
+
+.skills {
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    background: #a8dadc;
+}
+
+.skills__wrapper {
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    width: 75%;
+    overflow: auto;
+    border-radius: 0.4rem;
+    box-shadow: 0 2px 5px 0 #2020208a;
+    background: white;
+}
+
+.skills__line {
+    width: 6rem;
+    height: 0.2rem;
+    background: red;
+}
+
+.skills__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    margin: 0.2rem 0;
+    width: 100%;
+}
+
+.skill__bar {
+    width: 100%;
+    height: 1rem;
+    background: #a8dadc;
+    border-radius: 1rem;
+}
+
+.skill__fill {
+    background: #e63946;
+    height: 100%;
+    border-radius: inherit;
+}
+
+#html .skill__fill {
+    width: 95%;
+}
+
+#css .skill__fill {
+    width: 85%;
+}
+
+#javascript .skill__fill {
+    width: 63%;
+}
+
+#responsive .skill__fill {
+    width: 70%;
+}
+
+#jQuery .skill__fill {
+    width: 70%;
+}
+
+#bootstrap .skill__fill {
+    width: 50%;
+}
+
+#sass .skill__fill {
+    width: 75%;
+}
+
+#git .skill__fill {
+    width: 65%;
+}
+
+#cpp .skill__fill {
+    width: 70%;
+}
+
+#java .skill__fill {
+    width: 63%;
+}
