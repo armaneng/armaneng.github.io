@@ -78,3 +78,89 @@
     color: red;
     font-weight: 600;
 }
+
+.education {
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fefae0;
+    /* letter-spacing: 0.1rem;
+    line-height: 2.5rem; */
+}
+
+.education__wrapper {
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    width: 75%;
+    box-shadow: 0 2px 5px 0 #2020208a;
+    background: white;
+}
+
+.education__line {
+    width: 6rem;
+    height: 0.2rem;
+    background: red;
+}
+
+.education__item {
+    margin: 2rem 0;
+    display: flex;
+}
+
+.education__item .item__prefix {
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+}
+
+.education__item .item__pointer {
+    display: flex;
+    align-items: center;
+    width: 2rem;
+    height: 0.5rem;
+}
+
+.education__item .item__circle {
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    background: green;
+}
+
+.education__item .item__line {
+    width: 75%;
+    height: 30%;
+    background: green;
+}
+
+.education__item .item__logo {
+    line-height: 0;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+
+.education__item .item__info {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+.education__item .item__title h3 {
+    margin: 0;
+}
+
+.education__item .item__date {
+    color: green;
+}
+
+.education__item .item__degree {
+    font-weight: 500;
+}
+
+.education__item .item__place {
+    color: red;
+    font-weight: 500;
+}
