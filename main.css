@@ -293,3 +293,71 @@
     max-width: 100%;
     max-height: 100%;
 }
+
+.contact-me {
+    width: 100%;
+    min-height: calc(100vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    background: #ff9f1c;
+}
+
+.contact-me__wrapper {
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    width: 75%;
+    box-shadow: 0 2px 5px 0 #2020208a;
+    background: white;
+}
+
+.contact-me__line {
+    width: 6rem;
+    height: 0.2rem;
+    background: red;
+}
+
+.contact-me__form {
+    display: grid;
+    grid-row-gap: 1rem;
+    margin: 2rem 0;
+}
+
+.contact-me__form * {
+    display: block;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    padding: 0.5rem;
+    border: 1px solid #a1a1a1;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.contact-me__form *:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px #2ec4b6;
+    background: #fdf0d5;
+    border-color: #fdf0d5;
+}
+
+.contact-me__form textarea {
+    resize: none;
+}
+
+.contact-me__form button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background: #c1121f;
+    color: white;
+    transition: width 0.5s ease;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+}
+
+.contact-me__form button:hover {
+    width: 12rem;
+} 
