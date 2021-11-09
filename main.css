@@ -62,13 +62,13 @@
     /* max-height: 100vh; */
     border-radius: 0.4rem;
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: white;
+    background: #fff;
 }
 
 .about-me__line {
     width: 6rem;
     height: 0.2rem;
-    background: red;
+    background: #ff0000;
 }
 
 .about-me__description {
@@ -77,7 +77,7 @@
 }
 
 .about-me__description span {
-    color: red;
+    color: #ff0000;
     font-weight: 600;
 }
 
@@ -97,13 +97,13 @@
     padding: 0.5rem 1rem;
     width: 75%;
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: white;
+    background: #fff;
 }
 
 .education__line {
     width: 6rem;
     height: 0.2rem;
-    background: red;
+    background: #ff0000;
 }
 
 .education__item {
@@ -128,13 +128,13 @@
     width: 25%;
     height: 100%;
     border-radius: 50%;
-    background: green;
+    background: #008000;
 }
 
 .education__item .item__line {
     width: 75%;
     height: 30%;
-    background: green;
+    background: #008000;
 }
 
 .education__item .item__logo {
@@ -155,7 +155,7 @@
 }
 
 .education__item .item__date {
-    color: green;
+    color: #008000;
 }
 
 .education__item .item__degree {
@@ -163,7 +163,7 @@
 }
 
 .education__item .item__place {
-    color: red;
+    color: #ff0000;
     font-weight: 500;
 }
 
@@ -182,13 +182,13 @@
     /* overflow: auto; */
     border-radius: 0.4rem;
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: white;
+    background: #fff;
 }
 
 .skills__line {
     width: 6rem;
     height: 0.2rem;
-    background: red;
+    background: #ff0000;
 }
 
 .skills__list {
@@ -273,7 +273,7 @@
     width: 75%;
     /* max-height: 100%; */
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: white;
+    background: #fff;
 }
 
 /* .certificates__header {
@@ -283,7 +283,7 @@
 .certificates__line {
     width: 6rem;
     height: 0.2rem;
-    background: red;
+    background: #ff0000;
 }
 
 .certificate {
@@ -310,13 +310,13 @@
     padding: 0.5rem 1rem;
     width: 75%;
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: white;
+    background: #fff;
 }
 
 .contact-me__line {
     width: 6rem;
     height: 0.2rem;
-    background: red;
+    background: #ff0000;
 }
 
 .contact-me__form {
@@ -354,7 +354,7 @@
     height: 3rem;
     border-radius: 2rem;
     background: #c1121f;
-    color: white;
+    color: #fff;
     transition: width 0.5s ease;
     cursor: pointer;
     font-weight: 600;
