@@ -162,3 +162,45 @@ body {
 .toggle-language span {
     vertical-align: middle;
 }
+
+.footer {
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    background: #F8BB00;
+}
+
+.footer__nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__nav ul li {
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.footer__link {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color: #F4E6D5;
+}
+
+.footer__link:hover,
+.footer__link:active {
+    transform: rotateZ(360deg);
+    background: #c1121f;
+}
+
+.footer__link span {
+    font-size: 2rem;
+}
