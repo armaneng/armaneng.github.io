@@ -11,10 +11,10 @@
 }
 
 .introduction__wrapper {
-    width: 60%;
+    width: 75%;
     /* min-width: 12.5rem; */
     /* min-height: 20rem; */
-    height: 65%;
+    padding: 1.5rem 0;
     background: #ffffffab;
     border-radius: 0.5rem;
     display: flex;
