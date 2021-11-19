@@ -9,25 +9,67 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div class="backdrop"></div>
     <header class="header">
-        <div class="buttons-container">
-            <button class="toggle-button">
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
-            </button>
-            <button class="toggle-theme">
-                <span class="fas fa-moon toggle-theme__option toggle-theme__option--dark-mode"></span>
-                <span class="fas fa-sun toggle-theme__option toggle-theme__option--light-mode"></span>
-                <span class="toggle-theme__circle"></span>
-            </button>
-        </div>
+        <button class="toggle-theme">
+            <span class="fas fa-moon toggle-theme__option toggle-theme__option--dark-mode"></span>
+            <span class="fas fa-sun toggle-theme__option toggle-theme__option--light-mode"></span>
+            <span class="toggle-theme__circle"></span>
+        </button>
         <div class="toggle-language">
             <a href="index.html" class="toggle-language__option">En</a>
             <span>/</span>
             <a href="#" class="toggle-language__option">فا</a>
         </div>
     </header>
+    <button class="toggle-button">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+    </button>
+    <nav class="menu-nav">
+        <!-- <button class="toggle-button">
+            <span class="fa fa-times"></span>
+        </button> -->
+        <ul>
+            <li class="menu-nav__item">
+                <a href="#introduction">
+                    <span class="item__logo far fa-newspaper"></span>
+                    <h2 class="item__title">Introduction</h2>
+                </a>
+            </li>
+            <li class="menu-nav__item">
+                <a href="#about-me">
+                    <span class="item__logo far fa-paperclip"></span>
+                    <h2 class="item__title">About Me</h2>
+                </a>
+            </li>
+            <li class="menu-nav__item">
+                <a href="#education">
+                    <span class="item__logo far fa-graduation-cap"></span>
+                    <h2 class="item__title">Education</h2>
+                </a>
+            </li>
+            <li class="menu-nav__item">
+                <a href="#skills">
+                    <span class="item__logo far fa-cogs"></span>
+                    <h2 class="item__title">Skills</h2>
+                </a>
+            </li>
+            <li class="menu-nav__item">
+                <a href="#certificates">
+                    <span class="item__logo far fa-file-certificate"></span>
+                    <h2 class="item__title">Certificates</h2>
+                </a>
+            </li>
+            <li class="menu-nav__item">
+                <a href="#contact-me">
+                    <span class="item__logo far fa-comment"></span>
+                    <h2 class="item__title">Contact Me</h2>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <section class="introduction">
         <div class="introduction__wrapper">
             <div class="introduction__photo"></div>
