@@ -2,9 +2,14 @@
 
 let toggleButton = document.querySelector(".toggle-button");
 let menuNav = document.querySelector(".menu-nav");
+let menuNavItems = document.querySelectorAll(".menu-nav__item");
 let backdrop = document.querySelector(".backdrop");
 
 toggleButton.addEventListener("click", toggleMenuNav);
+
+menuNavItems.forEach(function(menuNavItem) {
+    menuNavItem.addEventListener("click", closeMenuNav);
+});
 
 function toggleMenuNav() {
     if (toggleButton.classList.contains("toggle-button--close")) {
