@@ -43,6 +43,17 @@
     font-size: 1.2rem;
 }
 
+section:not(.introduction) > div {
+    opacity: 0;
+    transform: translateX(-3rem);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section > div.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .about-me {
     width: 100%;
     min-height: calc(100vh - 3.5rem);

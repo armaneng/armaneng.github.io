@@ -40,3 +40,28 @@ function closeMenuNav() {
     }, 200);
     menuNav.classList.remove("menu-nav--opened");
 }
+
+// implement fade-in effect for section wrappers
+
+let sectionWrappers = document.querySelectorAll("section:not(.introduction) > div");
+
+window.addEventListener("scroll", checkVisibility);
+
+function checkVisibility() {
+    sectionWrappers.forEach(function(sectionWrapper) {
+        if (isVisible(sectionWrapper)) {
+            sectionWrapper.classList.add("fade-in");
+        }
+    });
+}
+
+function isVisible(element) {
+    let elementOffsetTop = element.getBoundingClientRect().top;
+    let distanceFromTop = -250;
+    if (elementOffsetTop - window.innerHeight < distanceFromTop) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
