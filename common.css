@@ -58,7 +58,6 @@ body {
 }
 
 .backdrop {
-    /* display: block;  */ /* will be used for js */
     display: none;
     position: fixed;
     cursor: pointer;
@@ -68,6 +67,13 @@ body {
     left: 0;
     background: #00000080;
     z-index: 150;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.backdrop--opened {
+    display: block;
+    opacity: 1;
 }
 
 .header {
@@ -110,27 +116,26 @@ body {
     height: 0.2rem;
     background: #fff;
     margin: 0.5rem 0;
+    transition: all 0.5s ease;
 }
 
-/* will be used for js */
-
-/* .toggle-button__bar:nth-child(1) {
+.toggle-button--close .toggle-button__bar {
     position: absolute;
     top: 0.5rem;
+    background: #000;
+}
+
+.toggle-button--close .toggle-button__bar:first-child {
     transform: rotateZ(45deg);
 }
 
-.toggle-button__bar:nth-child(2) {
+.toggle-button--close .toggle-button__bar:nth-child(2) {
     width: 0;
 }
 
-.toggle-button__bar:nth-child(3) {
-    position: absolute;
-    top: 0.5rem;
+.toggle-button--close .toggle-button__bar:last-child {
     transform: rotateZ(-45deg);
-} */
-
-/* end will be used for js */
+}
 
 .toggle-theme {
     position: relative;
@@ -209,31 +214,26 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    /* display: flex;  */ /* will be used for js */
-    /* align-items: center; */ /* will be used for js */
+    align-items: center;
     display: none;
-    width: 13.5rem;
+    width: 0;
     height: 100vh;
     background: #F8BB00;
     z-index: 200;
+    transition: width 0.5s ease-out;
+    overflow: hidden;
 }
 
-.menu-nav .toggle-button {
-    position: absolute;
-    top: 0.5rem;
-    left: 1rem;
-    color: white;
-}
-
-.menu-nav .toggle-button span {
-    font-size: 2.5rem;
-    font-weight: 300;
+.menu-nav--opened {
+    display: flex;
+    width: 13.5rem;
 }
 
 .menu-nav ul {
-    width: 100%;
+    min-width: 100%;
     margin-top: 3.5rem;
     padding: 0;
+    flex-shrink: 0;
 }
 
 .menu-nav__item {
