@@ -65,3 +65,18 @@ function isVisible(element) {
         return false;
     }
 }
+
+// implement skill fill percentages loading
+
+let skillsWrapper = document.querySelector(".skills__wrapper");
+let skillFillElements = document.querySelectorAll(".skill__fill");
+
+window.addEventListener("scroll", fillSkillBar);
+
+function fillSkillBar() {
+    if (skillsWrapper.classList.contains("fade-in")) {
+        skillFillElements.forEach(function(skillFillElement) {
+            skillFillElement.classList.add("skill__fill--loading");
+        });
+    }
+}

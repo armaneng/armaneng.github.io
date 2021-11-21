@@ -225,47 +225,49 @@ section > div.fade-in {
 
 .skill__fill {
     background: #e63946;
+    width: 0;
     height: 100%;
     border-radius: inherit;
+    transition: width 4s ease;
 }
 
-#html .skill__fill {
+#html .skill__fill--loading {
     width: 95%;
 }
 
-#css .skill__fill {
+#css .skill__fill--loading {
     width: 85%;
 }
 
-#javascript .skill__fill {
+#javascript .skill__fill--loading {
     width: 63%;
 }
 
-#responsive .skill__fill {
+#responsive .skill__fill--loading {
     width: 70%;
 }
 
-#jQuery .skill__fill {
+#jQuery .skill__fill--loading {
     width: 70%;
 }
 
-#bootstrap .skill__fill {
+#bootstrap .skill__fill--loading {
     width: 50%;
 }
 
-#sass .skill__fill {
+#sass .skill__fill--loading {
     width: 75%;
 }
 
-#git .skill__fill {
+#git .skill__fill--loading {
     width: 65%;
 }
 
-#cpp .skill__fill {
+#cpp .skill__fill--loading {
     width: 70%;
 }
 
-#java .skill__fill {
+#java .skill__fill--loading {
     width: 63%;
 }
 
