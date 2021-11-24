@@ -37,7 +37,8 @@ function closeMenuNav() {
     backdrop.classList.remove("backdrop--opened");
     setTimeout(function() {
         backdrop.style.display = "none";
-    }, 200);
+        menuNav.style.display = "none";
+    }, 500);
     menuNav.classList.remove("menu-nav--opened");
 }
 
