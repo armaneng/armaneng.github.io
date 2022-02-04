@@ -35,7 +35,7 @@
     /* min-width: 12.5rem; */
     /* min-height: 20rem; */
     padding: 1.5rem 0;
-    background: #ffffffab;
+    background: var(--intro-wrapper-background);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -50,13 +50,13 @@
     background-position: center;
     width: 9rem;
     height: 9rem;
-    border: 5px solid #F8BB00;
+    border: 5px solid #f8bb00;
     border-radius: 50%;
 }
 
 .introduction__title {
     font-weight: 600;
-    color: #3d3d3d;
+    color: var(--title-text);
 }
 
 .introduction__description {
@@ -93,22 +93,26 @@ section > div.fade-in {
     /* max-height: 100vh; */
     border-radius: 0.4rem;
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: #fff;
+    background: var(--wrappers-background);
+}
+
+.about-me__title {
+    color: var(--text-primary);
 }
 
 .about-me__line {
     width: 6rem;
     height: 0.2rem;
-    background: #ff0000;
+    background: var(--wrappers-line);
 }
 
 .about-me__description {
     font-weight: 500;
-    color: #3d3d3d;
+    color: var(--text-primary);
 }
 
 .about-me__description span {
-    color: #ff0000;
+    color: var(--wrappers-line);
     font-weight: 600;
 }
 
@@ -128,13 +132,13 @@ section > div.fade-in {
     padding: 0.5rem 1rem;
     width: 75%;
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: #fff;
+    background: var(--wrappers-background);
 }
 
 .education__line {
     width: 6rem;
     height: 0.2rem;
-    background: #ff0000;
+    background: var(--wrappers-line);
 }
 
 .education__item {
@@ -159,19 +163,20 @@ section > div.fade-in {
     width: 25%;
     height: 100%;
     border-radius: 50%;
-    background: #008000;
+    background: var(--education-item-prefix);
 }
 
 .education__item .item__line {
     width: 75%;
     height: 30%;
-    background: #008000;
+    background: var(--education-item-prefix);
 }
 
 .education__item .item__logo {
     line-height: 0;
     font-size: 2rem;
     margin: 0 0.5rem;
+    color: var(--education-logo-color);
 }
 
 .education__item .item__info {
@@ -181,21 +186,30 @@ section > div.fade-in {
     line-height: 1.5rem;
 }
 
+.education__item .item__title {
+    color: var(--education-item-title);
+}
+
 .education__item .item__title h3 {
     margin: 0;
 }
 
 .education__item .item__date {
-    color: #008000;
+    color: var(--education-item-date);
 }
 
 .education__item .item__degree {
     font-weight: 500;
+    color: var(--education-item-degree);
 }
 
 .education__item .item__place {
-    color: #ff0000;
     font-weight: 500;
+    color: var(--education-item-place);
+}
+
+.education__item .item__location {
+    color: var(--education-item-location);
 }
 
 .skills {
@@ -213,13 +227,13 @@ section > div.fade-in {
     /* overflow: auto; */
     border-radius: 0.4rem;
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: #fff;
+    background: var(--wrappers-background);
 }
 
 .skills__line {
     width: 6rem;
     height: 0.2rem;
-    background: #ff0000;
+    background: var(--wrappers-line);
 }
 
 .skills__list {
@@ -239,12 +253,12 @@ section > div.fade-in {
 .skill__bar {
     width: 100%;
     height: 1rem;
-    background: #a8dadc;
+    background: var(--skillbar-background);
     border-radius: 1rem;
 }
 
 .skill__fill {
-    background: #e63946;
+    background: var(--red-color);
     width: 0;
     height: 100%;
     border-radius: inherit;
@@ -306,7 +320,7 @@ section > div.fade-in {
     width: 75%;
     /* max-height: 100%; */
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: #fff;
+    background: var(--wrappers-background);
 }
 
 /* .certificates__header {
@@ -316,7 +330,7 @@ section > div.fade-in {
 .certificates__line {
     width: 6rem;
     height: 0.2rem;
-    background: #ff0000;
+    background: var(--wrappers-line);
 }
 
 .certificate {
@@ -344,13 +358,13 @@ section > div.fade-in {
     padding: 0.5rem 1rem;
     width: 75%;
     box-shadow: 0 2px 5px 0 #2020208a;
-    background: #fff;
+    background: var(--wrappers-background);
 }
 
 .contact-me__line {
     width: 6rem;
     height: 0.2rem;
-    background: #ff0000;
+    background: var(--wrappers-line);
 }
 
 .contact-me__form {
@@ -372,9 +386,9 @@ section > div.fade-in {
 
 .contact-me__form *:focus {
     outline: none;
-    box-shadow: 0 0 0 5px #2ec4b6;
-    background: #fdf0d5;
-    border-color: #fdf0d5;
+    box-shadow: 0 0 0 5px var(--form-input-focus-shadow);
+    background: var(--form-input-focus);
+    border-color: var(--form-input-focus);
 }
 
 .contact-me__form textarea {
@@ -387,7 +401,7 @@ section > div.fade-in {
     width: 10rem;
     height: 3rem;
     border-radius: 2rem;
-    background: #c1121f;
+    background: var(--red-color);
     color: #fff;
     transition: width 0.5s ease;
     cursor: pointer;

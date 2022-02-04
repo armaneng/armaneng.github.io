@@ -46,6 +46,35 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-background: #f8bb00;
+    --toggle-language-background: #3b3939;
+    --toggle-language-options-hover: #f8bb00;
+    --toggle-theme-background: #3b3939;
+    --toggle-theme-circle-border: #3b3939;
+    --toggle-button-closed: black;
+    --text-primary: #3d3d3d;
+    --text-secondary: black;
+    --menu-background: #f8bb00;
+    --menu-items-color: black;
+    --menu-items-hover: #dbe8d8;
+    --intro-wrapper-background: rgba(255, 255, 255, 0.6);
+    --wrappers-background: white;
+    --wrappers-line: red;
+    --red-color: #e63946;
+    --education-item-prefix: green;
+    --education-logo-color: black;
+    --education-item-title: black;
+    --education-item-date: green;
+    --education-item-degree: black;
+    --education-item-place: red;
+    --education-item-location: black;
+    --skillbar-background: #a8dadc;
+    --form-input-focus: #fdf0d5;
+    --form-input-focus-shadow: #2ec4b6;
+    --footer-icon: #f4e6d5;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -83,7 +112,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #F8BB00;
+    background: var(--main-background);
     padding: 0.5rem 1rem 0.5rem 4rem;
     position: fixed;
     top: 0;
@@ -122,7 +151,7 @@ body {
 .toggle-button--close .toggle-button__bar {
     position: absolute;
     top: 0.5rem;
-    background: #000;
+    background: var(--toggle-button-closed);
 }
 
 .toggle-button--close .toggle-button__bar:first-child {
@@ -146,7 +175,7 @@ body {
     height: 2rem;
     cursor: pointer;
     border-radius: 50px;
-    background: #3b3939; 
+    background: var(--toggle-theme-background); 
     /* background: #00c3ff; */
     padding: 0 0.5rem;
     /* margin-left: 0.5rem; */
@@ -179,13 +208,13 @@ body {
     height: 100%;
     background: #2bff00;
     border-radius: inherit;
-    border: 2px solid #3b3939;
+    border: 2px solid var(--toggle-theme-circle-border);
 }
 
 .toggle-language {
     border-radius: 10px;
     padding: 0rem 0.5rem;
-    background: #3b3939;
+    background: var(--toggle-theme-background);
     color: #fff;
     width: 4rem;
     height: 2rem;
@@ -203,7 +232,7 @@ body {
 
 .toggle-language__option:hover,
 .toggle-language__option:active {
-    color: #F8BB00;
+    color: var(--toggle-language-options-hover);
 }
 
 .toggle-language span {
@@ -218,7 +247,7 @@ body {
     display: none;
     width: 0;
     height: 100vh;
-    background: #F8BB00;
+    background: var(--menu-background);
     z-index: 200;
     transition: width 0.5s ease-out;
     overflow: hidden;
@@ -245,7 +274,7 @@ body {
 
 .menu-nav__item:hover,
 .menu-nav__item:active {
-    background: #DBE8D8;
+    background: var(--menu-items-hover);
 }
 
 .menu-nav__item a {
@@ -253,16 +282,17 @@ body {
     display: flex;
     align-items: center;
     padding: 0 0.5rem;
-    color: #000000;
+    color: var(--menu-items-color);
 }
 
-.menu-nav__item a:hover,
+/* .menu-nav__item a:hover,
 .menu-nav__item a:active {
     color: black;
-}
+} */
 
 .menu-nav__item .item__logo {
     font-size: 1.5rem;
+    color: var(--menu-items-color);
 }
 
 .menu-nav__item .item__title {
@@ -273,7 +303,7 @@ body {
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-    background: #F8BB00;
+    background: var(--main-background);
 }
 
 .footer__nav ul {
@@ -298,13 +328,13 @@ body {
     height: 3rem;
     text-decoration: none;
     transition: all 0.5s ease;
-    color: #F4E6D5;
+    color: var(--footer-icon);
 }
 
 .footer__link:hover,
 .footer__link:active {
     transform: rotateZ(360deg);
-    background: #c1121f;
+    background: var(--red-color);
 }
 
 .footer__link span {
