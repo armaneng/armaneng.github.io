@@ -46,6 +46,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-background: #f8bb00;
     --toggle-language-background: #3b3939;
@@ -73,17 +77,43 @@
     --form-input-focus: #fdf0d5;
     --form-input-focus-shadow: #2ec4b6;
     --footer-icon: #f4e6d5;
-}
-
-html {
-    scroll-behavior: smooth;
+    transition: all 2s ease;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     margin: 0;
-    /* background: #f5f5f5; */
+    color: var(--text-primary);
+}
+
+body.dark-mode {
+    --main-background: #212529;
+    --toggle-language-background: #949c9c;
+    --toggle-language-options-hover: #212529;
+    --toggle-theme-background: #00c3ff;
+    --toggle-theme-circle-border: #00c3ff;
+    --toggle-button-closed: white;
+    --text-primary: white;
+    --text-secondary: white;
+    --menu-background: #d84e4b;
+    --menu-items-color: white;
+    --menu-items-hover: #949c9c;
+    --intro-wrapper-background: rgba(44,48,54,0.8);
+    --wrappers-background: #2c3036;
+    --wrappers-line: #ffbc2c;
+    --red-color: #d84e4b;
+    --education-item-prefix: #949c9c;
+    --education-logo-color: wheat;
+    --education-item-title: white;
+    --education-item-date: #f8bb00;
+    --education-item-degree: wheat;
+    --education-item-place: #d84e4b;
+    --education-item-location: #949c9c;
+    --skillbar-background: wheat;
+    --form-input-focus: #ffd986;
+    --form-input-focus-shadow: #d84e4b;
+    --footer-icon: white;
 }
 
 .backdrop {
@@ -100,12 +130,6 @@ body {
     transition: opacity 0.5s ease;
 }
 
-.backdrop--opened {
-    display: block;
-    opacity: 1;
-}
-
-
 .shadow {
     display: none;
     position: fixed;
@@ -119,6 +143,7 @@ body {
     transition: opacity 0.5s ease;
 }
 
+.backdrop--opened,
 .shadow--opened {
     display: block;
     opacity: 1;
@@ -195,10 +220,9 @@ body {
     cursor: pointer;
     border-radius: 50px;
     background: var(--toggle-theme-background); 
-    /* background: #00c3ff; */
     padding: 0 0.5rem;
-    /* margin-left: 0.5rem; */
     font-size: 1.2rem;
+    transition: all 5s ease;
 }
 
 .toggle-theme,
@@ -228,12 +252,13 @@ body {
     background: #2bff00;
     border-radius: inherit;
     border: 2px solid var(--toggle-theme-circle-border);
+    transition: left 0.2s ease-out;
 }
 
 .toggle-language {
     border-radius: 10px;
     padding: 0rem 0.5rem;
-    background: var(--toggle-theme-background);
+    background: var(--toggle-language-background);
     color: #fff;
     width: 4rem;
     height: 2rem;

@@ -12,12 +12,10 @@ menuNavItems.forEach(function(menuNavItem) {
 });
 
 function toggleMenuNav() {
-    if (toggleButton.classList.contains("toggle-button--close")) {
+    if (toggleButton.classList.contains("toggle-button--close")) 
         closeMenuNav();
-    }
-    else {
+    else
         openMenuNav();
-    }
 }
 
 backdrop.addEventListener("click", closeMenuNav);
@@ -79,5 +77,47 @@ function fillSkillBar() {
         skillFillElements.forEach(function(skillFillElement) {
             skillFillElement.classList.add("skill__fill--loading");
         });
+    }
+}
+
+//implement toggle theme functionality
+
+let rootElement = document.querySelector(":root");
+let cssVariables = getComputedStyle(rootElement);
+let toggleThemeBtn = document.querySelector(".toggle-theme");
+let toggleThemeCircle = document.querySelector(".toggle-theme__circle");
+let shadowElement = document.querySelector(".shadow");
+console.log("Outside: " + localStorage.getItem("theme"));
+toggleThemeBtn.addEventListener("click", toggleTheme);
+
+function toggleTheme() {
+    let currentTheme = localStorage.getItem("theme");
+    console.log("In toggleTheme: " + currentTheme);
+    if (currentTheme === null || currentTheme === "light") {
+        localStorage.setItem("theme", "dark");
+        setTheme("dark");
+    }
+    else {
+        localStorage.setItem("theme", "light");
+        setTheme("light");
+    }
+}
+
+function setTheme(theme) {
+    if (theme === "dark") {
+        toggleThemeCircle.style.left = "0";
+        shadowElement.style.display = "block";
+        setTimeout(function() {
+            shadowElement.classList.add("shadow--opened");
+        }, 10);
+        document.body.classList.add("dark-mode");
+    }
+    else {
+        toggleThemeCircle.style.left = "50%";
+        shadowElement.classList.remove("shadow--opened");
+        setTimeout(function() {
+            shadowElement.style.display = "none";
+        }, 500);
+        document.body.classList.remove("dark-mode");
     }
 }
