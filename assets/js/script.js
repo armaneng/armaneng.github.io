@@ -111,7 +111,7 @@ function setTheme(theme) {
         shadowElement.style.display = "block";
         setTimeout(function() {
             shadowElement.classList.add("shadow--opened");
-        }, 10);
+        }, 50);
         document.body.classList.add("dark-mode");
     }
     else {
@@ -119,7 +119,7 @@ function setTheme(theme) {
         shadowElement.classList.remove("shadow--opened");
         setTimeout(function() {
             shadowElement.style.display = "none";
-        }, 500);
+        }, 150);
         document.body.classList.remove("dark-mode");
     }
 }
