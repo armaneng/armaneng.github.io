@@ -77,7 +77,6 @@ html {
     --form-input-focus: #fdf0d5;
     --form-input-focus-shadow: #2ec4b6;
     --footer-icon: #f4e6d5;
-    transition: all 2s ease;
 }
 
 body {
