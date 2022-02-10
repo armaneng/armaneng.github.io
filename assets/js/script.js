@@ -87,13 +87,15 @@ let cssVariables = getComputedStyle(rootElement);
 let toggleThemeBtn = document.querySelector(".toggle-theme");
 let toggleThemeCircle = document.querySelector(".toggle-theme__circle");
 let shadowElement = document.querySelector(".shadow");
-console.log("Outside: " + localStorage.getItem("theme"));
+
 toggleThemeBtn.addEventListener("click", toggleTheme);
+
+window.onload = localStorage.getItem("theme") == "light" ? setTheme("light") : setTheme("dark");
 
 function toggleTheme() {
     let currentTheme = localStorage.getItem("theme");
-    console.log("In toggleTheme: " + currentTheme);
-    if (currentTheme === null || currentTheme === "light") {
+
+    if (currentTheme === null || currentTheme == "light") {
         localStorage.setItem("theme", "dark");
         setTheme("dark");
     }
@@ -104,7 +106,7 @@ function toggleTheme() {
 }
 
 function setTheme(theme) {
-    if (theme === "dark") {
+    if (theme == "dark") {
         toggleThemeCircle.style.left = "0";
         shadowElement.style.display = "block";
         setTimeout(function() {
