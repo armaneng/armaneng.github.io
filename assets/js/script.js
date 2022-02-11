@@ -90,7 +90,14 @@ let shadowElement = document.querySelector(".shadow");
 
 toggleThemeBtn.addEventListener("click", toggleTheme);
 
-window.onload = localStorage.getItem("theme") == "light" ? setTheme("light") : setTheme("dark");
+window.onload = function() {
+    let currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme === null || currentTheme == "light")
+        setTheme("light");
+    else
+        setTheme("dark");
+}
 
 function toggleTheme() {
     let currentTheme = localStorage.getItem("theme");
