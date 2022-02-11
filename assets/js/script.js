@@ -123,4 +123,3 @@ function setTheme(theme) {
         document.body.classList.remove("dark-mode");
     }
 } 
-localStorage.clear();
