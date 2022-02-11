@@ -122,4 +122,4 @@ function setTheme(theme) {
         }, 150);
         document.body.classList.remove("dark-mode");
     }
-}
+} 
