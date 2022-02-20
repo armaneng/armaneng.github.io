@@ -64,7 +64,7 @@ html {
     --menu-items-hover: #dbe8d8;
     --intro-wrapper-background: rgba(255, 255, 255, 0.6);
     --wrappers-background: white;
-    --wrappers-line: red;
+    --header__line: red;
     --red-color: #e63946;
     --education-item-prefix: green;
     --education-logo-color: black;
@@ -100,7 +100,7 @@ body.dark-mode {
     --menu-items-hover: #949c9c;
     --intro-wrapper-background: rgba(44,48,54,0.8);
     --wrappers-background: #2c3036;
-    --wrappers-line: #ffbc2c;
+    --header__line: #ffbc2c;
     --red-color: #d84e4b;
     --education-item-prefix: #949c9c;
     --education-logo-color: wheat;
@@ -116,8 +116,6 @@ body.dark-mode {
 }
 
 .backdrop {
-    display: none;
-    position: fixed;
     cursor: pointer;
     width: 100vw;
     height: 100vh;
@@ -130,8 +128,6 @@ body.dark-mode {
 }
 
 .shadow {
-    display: none;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -151,27 +147,17 @@ body.dark-mode {
 .header {
     width: 100%;
     min-width: 20rem;
-    height: 3.5rem;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     background: var(--main-background);
     padding: 0.5rem 1rem 0.5rem 4rem;
-    position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0 2px 5px 0 #2020208a;
+    box-shadow: 0 2px 5px 0 rgba(32, 32, 32, 0.541);
     z-index: 100;
 }
 
-.buttons-container {
-    display: flex;
-    align-items: center;
-}
-
 .toggle-button {
-    position: fixed;
-    top: 0.5rem;
+    top: 0.3rem;
     left: 1rem;
     width: 2.5rem;
     cursor: pointer;
@@ -211,9 +197,7 @@ body.dark-mode {
 
 .toggle-theme {
     position: relative;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 5rem;
     height: 2rem;
     cursor: pointer;
@@ -283,11 +267,8 @@ body.dark-mode {
 }
 
 .menu-nav {
-    position: fixed;
     left: 0;
     top: 0;
-    align-items: center;
-    display: none;
     width: 0;
     height: 100vh;
     background: var(--menu-background);
@@ -297,7 +278,6 @@ body.dark-mode {
 }
 
 .menu-nav--opened {
-    display: flex;
     width: 13.5rem;
 }
 
@@ -322,16 +302,9 @@ body.dark-mode {
 
 .menu-nav__item a {
     text-decoration: none;
-    display: flex;
-    align-items: center;
     padding: 0 0.5rem;
     color: var(--menu-items-color);
 }
-
-/* .menu-nav__item a:hover,
-.menu-nav__item a:active {
-    color: black;
-} */
 
 .menu-nav__item .item__logo {
     font-size: 1.5rem;
@@ -344,13 +317,10 @@ body.dark-mode {
 
 .footer {
     padding: 0.5rem;
-    display: flex;
-    justify-content: center;
     background: var(--main-background);
 }
 
 .footer__nav ul {
-    display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -364,9 +334,6 @@ body.dark-mode {
 
 .footer__link {
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 3rem;
     height: 3rem;
     text-decoration: none;
@@ -383,3 +350,44 @@ body.dark-mode {
 .footer__link span {
     font-size: 2rem;
 }
+/* --- */
+.header,
+.buttons-container,
+.toggle-theme,
+.menu-nav--opened,
+.menu-nav__item a,
+.footer,
+.footer__nav ul,
+.footer__link {
+    display: flex;
+}
+
+
+.backdrop,
+.shadow,
+.header,
+.toggle-button,
+.menu-nav {
+    position: fixed;
+}
+
+.backdrop,
+.shadow,
+.menu-nav {
+    display: none;
+}
+
+.footer,
+.footer__link {
+    justify-content: center;
+}
+
+.header,
+.buttons-container,
+.toggle-theme,
+.menu-nav,
+.menu-nav__item a,
+.footer__link {
+    align-items: center;
+}
+/* --- */

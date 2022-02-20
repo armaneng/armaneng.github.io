@@ -42,7 +42,7 @@ function closeMenuNav() {
 
 // implement fade-in effect for section wrappers
 
-let sectionWrappers = document.querySelectorAll("section:not(.introduction) > div");
+let sectionWrappers = document.querySelectorAll("section:not(.introduction) > .wrapper");
 
 window.addEventListener("scroll", checkVisibility);
 
@@ -67,7 +67,7 @@ function isVisible(element) {
 
 // implement skill fill percentages loading
 
-let skillsWrapper = document.querySelector(".skills__wrapper");
+let skillsWrapper = document.querySelector(".wrapper--skills");
 let skillFillElements = document.querySelectorAll(".skill__fill");
 
 window.addEventListener("scroll", fillSkillBar);
