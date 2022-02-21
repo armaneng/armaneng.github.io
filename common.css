@@ -64,7 +64,7 @@ html {
     --menu-items-hover: #dbe8d8;
     --intro-wrapper-background: rgba(255, 255, 255, 0.6);
     --wrappers-background: white;
-    --header__line: red;
+    --header-line: red;
     --red-color: #e63946;
     --education-item-prefix: green;
     --education-logo-color: black;
@@ -100,7 +100,7 @@ body.dark-mode {
     --menu-items-hover: #949c9c;
     --intro-wrapper-background: rgba(44,48,54,0.8);
     --wrappers-background: #2c3036;
-    --header__line: #ffbc2c;
+    --header-line: #ffbc2c;
     --red-color: #d84e4b;
     --education-item-prefix: #949c9c;
     --education-logo-color: wheat;
@@ -113,6 +113,12 @@ body.dark-mode {
     --form-input-focus: #ffd986;
     --form-input-focus-shadow: #d84e4b;
     --footer-icon: white;
+}
+
+body.persian {
+    direction: rtl;
+    font-family: "BYekan";
+    font-weight: 300;
 }
 
 .backdrop {
@@ -155,6 +161,11 @@ body.dark-mode {
     z-index: 100;
 }
 
+body.persian .header {
+    padding-right: 4rem;
+    padding-left: 1rem;
+}
+
 .toggle-button {
     top: 0.3rem;
     left: 1rem;
@@ -165,6 +176,11 @@ body.dark-mode {
     padding-top: 0;
     padding-bottom: 0;
     z-index: 250;
+}
+
+body.persian .toggle-button {
+    left: unset;
+    right: 0;
 }
 
 .toggle-button__bar {
@@ -205,6 +221,10 @@ body.dark-mode {
     padding: 0 0.5rem;
     font-size: 1.2rem;
     transition: all 5s ease;
+}
+
+body.persian .toggle-theme {
+    direction: ltr;
 }
 
 .toggle-theme,
@@ -276,6 +296,11 @@ body.dark-mode {
     overflow: hidden;
 }
 
+body.persian .menu-nav {
+    right: 0;
+    left: unset;
+}
+
 .menu-nav--opened {
     width: 13.5rem;
 }
@@ -314,6 +339,11 @@ body.dark-mode {
     margin-left: 0.5rem;
 }
 
+body.persian .menu-nav__item .item__title {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
 .footer {
     padding: 0.5rem;
     background: var(--main-background);
@@ -349,7 +379,7 @@ body.dark-mode {
 .footer__link span {
     font-size: 2rem;
 }
-/* --- */
+
 .header,
 .buttons-container,
 .toggle-theme,
@@ -389,4 +419,3 @@ body.dark-mode {
 .footer__link {
     align-items: center;
 }
-/* --- */

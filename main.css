@@ -82,7 +82,7 @@ section > .wrapper.fade-in {
     text-align: center;
     width: 9.5rem;
     height: 0.2rem;
-    background: var(--header__line);
+    background: var(--header-line);
     margin: 0 auto;
 }
 
@@ -93,7 +93,7 @@ section > .wrapper.fade-in {
 }
 
 .about-me__description span {
-    color: var(--wrappers-line);
+    color: var(--header-line);
     font-weight: 600;
 }
 
@@ -176,6 +176,10 @@ section > .wrapper.fade-in {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+body.persian .skills__list {
+    direction: ltr;
 }
 
 .skill {
@@ -356,5 +360,8 @@ section > .wrapper.fade-in {
     }
     .education__item .item__location {
         grid-column-start: 2;
+    }
+    body.persian .header {
+        padding: 0.5rem 4rem 0.5rem 1rem;
     }
 }
