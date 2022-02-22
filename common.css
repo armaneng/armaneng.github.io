@@ -180,7 +180,7 @@ body.persian .header {
 
 body.persian .toggle-button {
     left: unset;
-    right: 0;
+    right: 1rem;
 }
 
 .toggle-button__bar {
@@ -317,6 +317,11 @@ body.persian .menu-nav {
     padding: 0 0 0 1rem;
     list-style: none;
     transition: all 0.2s ease;
+}
+
+body.persian .menu-nav__item {
+    padding-right: 1rem;
+    padding-left: 0;
 }
 
 .menu-nav__item:hover,
