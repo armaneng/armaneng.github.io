@@ -122,24 +122,22 @@ body.persian {
 }
 
 .backdrop {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: #00000080;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 150;
-    opacity: 0;
-    transition: opacity 0.5s ease;
 }
 
 .shadow {
-    top: 0;
-    left: 0;
+    background: rgba(0, 0, 0, 0.502);
+    z-index: -1;
+}
+
+.backdrop,
+.shadow {
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
     opacity: 0;
-    z-index: -1;
     transition: opacity 0.5s ease;
 }
 
