@@ -242,6 +242,10 @@ body.persian .skills__list {
     width: 63%;
 }
 
+#ds .skill__fill--loading {
+    width: 63%;
+}
+
 .certificate {
     margin: 2rem 0;
 }
